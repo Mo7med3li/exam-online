@@ -11,7 +11,7 @@ import React from "react";
 
 export default function NavbarAuth() {
   return (
-    <ul className="flex items-center gap-12  py-16 px-20  justify-end">
+    <ul className="flex items-center gap-12  py-12 px-20  justify-end">
       <li>
         {" "}
         <Select>

@@ -1,25 +1,30 @@
-import type React from "react";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import Link from "next/link";
+import React from "react";
 import { FaApple, FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
 
-export function LoginForm() {
+export default function SignupForm() {
   return (
-    <div className="bg-white w-[500px]  rounded-md  flex flex-col gap-8">
-      <h2 className="text-2xl font-bold">Sign in</h2>
-      <form className="flex flex-col gap-8">
-        <Input type="email" placeholder="Enter Email" />
-        <Input type="password" placeholder="Password" />
-        <div className=" text-end">
-          <Link href={""} className="text-main text-base  ">
-            Recover Password ?
-          </Link>
+    <div className="bg-white w-[500px]  rounded-md flex flex-col gap-8">
+      <h2 className="text-2xl font-bold">Sign up</h2>
+      <form className="flex flex-col gap-8  ">
+        <Input type="text" placeholder="First Name" />
+        <Input type="text" placeholder="Last Name" />
+        <Input type="email" placeholder="Email" />
+        <Input type="Password" placeholder="Password" />
+        <Input type="password" placeholder="Confirm Password" />
+        <div className=" text-center">
+          <p className=" text-base">
+            Already have an account?
+            <Link className="text-main text-base px-1" href={"/login"}>
+              Login
+            </Link>
+          </p>
         </div>
-        <Button className="w-full rounded-2xl h-14 text-lg ">Sign in</Button>
+        <Button className="w-full rounded-2xl h-14 text-lg ">
+          Create Account
+        </Button>
       </form>
       <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
         <span className="relative z-10 bg-background px-2 text-base text-muted-foreground">

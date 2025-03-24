@@ -1,12 +1,19 @@
 import React from "react";
-import loginImage from "@/assets/imgs/background-simple.png";
-import Image from "next/image";
-import { FaApple, FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Welcome from "../_components/Welcome";
-
+import NavbarAuth from "../_components/NavbarAuth";
+import SignupForm from "./_components/SignupForm";
 export default function page() {
-  return <main></main>;
+  return (
+    <main className="grid grid-cols-5  h-screen">
+      <Welcome />
+      <section className=" col-span-3  ">
+        <div>
+          <NavbarAuth />
+        </div>
+        <div className="  flex items-center justify-center ">
+          <SignupForm />
+        </div>
+      </section>
+    </main>
+  );
 }
