@@ -1,8 +1,10 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import React from "react";
 import SocialLinks from "../../_components/SocialLinks";
+import PasswordInput from "../../_components/PasswordInput";
 
 export default function SignupForm() {
   return (
@@ -12,8 +14,8 @@ export default function SignupForm() {
         <Input type="text" placeholder="First Name" />
         <Input type="text" placeholder="Last Name" />
         <Input type="email" placeholder="Email" />
-        <Input type="Password" placeholder="Password" />
-        <Input type="password" placeholder="Confirm Password" />
+        <PasswordInput placeholder="Password" />
+        <PasswordInput placeholder="Confirm Password" />
         <div className=" text-center">
           <p className=" text-base">
             Already have an account?
