@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        btnshadow: " 0px 18px 30px 0px #2F1C1C1A",
+        inputShadow: "0px 10px 20px 0px #4461F20D",
+      },
       colors: {
         main: "#4461F2",
         second: "#F0F4FC",
