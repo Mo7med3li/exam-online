@@ -27,13 +27,13 @@ export default function NavbarAuth() {
         </Select>
       </li>
       <li>
-        <Link href="/login" className="text-main text-xl font-bold">
+        <Link href="/auth/login" className="text-main text-xl font-bold">
           Sign IN
         </Link>
       </li>
       <li>
         <Link
-          href="/signup"
+          href="/auth/signup"
           className="border border-bordercolor rounded-2xl text-main px-5 py-2 text-xl font-medium"
         >
           Register

@@ -19,7 +19,7 @@ export default function SignupForm() {
         <div className=" text-center">
           <p className=" text-base">
             Already have an account?
-            <Link className="text-main text-base px-1" href={"/login"}>
+            <Link className="text-main text-base px-1" href={"/auth/login"}>
               Login
             </Link>
           </p>
